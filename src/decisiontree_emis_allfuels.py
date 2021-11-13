@@ -8,6 +8,9 @@ import sys
 # consumption type increases are associated with higher emissions 
 
 def main():
+    import ssl
+    ssl._create_default_https_context = ssl._create_unverified_context
+
     import numpy as np
     import matplotlib.pyplot as plt
     import pandas as pd
